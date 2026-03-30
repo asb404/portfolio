@@ -4,32 +4,52 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { GitHubIcon } from "@/src/components/Icons";
+import {
+  FaReact,
+  FaNodeJs,
+  FaDocker,
+  FaAws,
+  FaJava,
+  FaAndroid
+} from "react-icons/fa";
+
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiPython,
+  SiSpringboot,
+  SiKubernetes,
+  SiPostgresql,
+  SiFastapi
+} from "react-icons/si";
+
+import { MdPsychology } from "react-icons/md";
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
-
+  
   const skills = [
-    { name: "React", icon: "⚛️" },
-    { name: "Next.js", icon: "▲" },
-    { name: "TypeScript", icon: "TS" },
-    { name: "AI Systems", icon: "🤖" },
-    { name: "LLMs / RAG", icon: "🧠" },
-    { name: "FastAPI", icon: "🐍" },
-    { name: "Spring Boot", icon: "🌱" },
-    { name: "AWS", icon: "☁️" },
-    { name: "Node.js", icon: "⬢" },
-    { name: "Python", icon: "🐍" },
-    { name: "Java", icon: "☕" },
-  { name: "Kotlin", icon: "📱" },
-    { name: "Docker", icon: "🐳" },
-    { name: "Kubernetes", icon: "⚓" },
-    { name: "SQL", icon: "🗄️" },
-    { name: "Android SDK", icon: "🤖" },
+    { name: "React", icon: <FaReact /> },
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "AI Systems", icon: <MdPsychology /> },
+    { name: "LLMs / RAG", icon: <MdPsychology /> },
+    { name: "FastAPI", icon: <SiFastapi /> },
+    { name: "Spring Boot", icon: <SiSpringboot /> },
+    { name: "AWS", icon: <FaAws /> },
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "Python", icon: <SiPython /> },
+    { name: "Java", icon: <FaJava /> },
+    { name: "Kotlin", icon: <FaAndroid /> },
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "Kubernetes", icon: <SiKubernetes /> },
+    { name: "SQL", icon: <SiPostgresql /> },
+    { name: "Android SDK", icon: <FaAndroid /> },
   ];
 
   const stats = [
-    { value: "2+", label: "Years Experience", suffix: "in Production" },
+    { value: "2.5+", label: "Years Experience", suffix: "in Production" },
     { value: "100K+", label: "Users Impacted", suffix: "Worldwide" },
     { value: "15+", label: "Projects", suffix: "Delivered" },
     { value: "99.9%", label: "System Uptime", suffix: "Average" },

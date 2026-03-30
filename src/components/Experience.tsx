@@ -4,17 +4,15 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    role: "Software Developer (Research Assistant)",
+    role: "Software Engineer - Research Assistant",
     company: "CNS - Indiana University",
-    period: "Mar 2025 – Present",
+    period: "Aug 2025 – Present",
     description:
-      "Built distributed AI systems, RAG pipelines, and high-performance data processing workflows for large-scale biomedical datasets.",
+      "Built distributed AI systems and agentic RAG pipelines for large-scale biomedical datasets.",
     points: [
       "Translated ambiguous domain queries into production-grade RAG pipelines, designing system workflows and iterating based on real-world usage and feedback.",
       "Designed and deployed FastAPI-based distributed backend services for agentic RAG systems using Claude and local LLMs, enabling semantic access to large-scale datasets.",
-      "Built tool-augmented LLM agents using LangChain and LangGraph with dynamic routing and function calling, integrating 10+ tools; reduced latency by 35% and achieved >99% reliable inference via caching and fault-tolerant design.",
-      "Optimized large-scale data processing pipelines using parallel and distributed computation, improving throughput by 30% across 1,000+ data units.",
-      "Engineered multithreaded, memory-efficient pipelines with algorithmic optimizations, accelerating large-scale computations by 20% and improving system efficiency."
+      "Built tool-augmented LLM agents using LangChain and LangGraph with dynamic routing and function calling, integrating 10+ tools; reduced latency by 35% and achieved >99% reliable inference via caching and fault-tolerant design."
     ],
     tech: ["FastAPI", "RAG", "LangChain", "LangGraph", "Distributed Systems"],
   },
@@ -31,6 +29,19 @@ const experiences = [
       "Developed secure, scalable microservices and APIs integrated with AWS IAM, ensuring reliable and auditable AI-driven operations."
     ],
     tech: ["AWS", "Bedrock", "Vector Search", "Microservices", "Distributed Systems"],
+  },
+  {
+    role: "Software Engineer - Research Assistant",
+    company: "CNS - Indiana University",
+    period: "Mar 2025 – May 2025",
+    description:
+      "Engineered high-performance data pipelines and optimized large-scale computational workflows.",
+    points: [
+      "Optimized large-scale data processing pipelines for tissue mapping using parallel and distributed computation, improving throughput by 30% across 1,000+ data units.",
+      "Built reusable data processing modules following SDLC best practices, reducing preprocessing time by 25% and improving system maintainability.",
+      "Engineered multithreaded, memory-efficient pipelines with algorithmic optimizations, accelerating large-scale computations by 20%."
+    ],
+    tech: ["Python", "Data Pipelines", "Multithreading", "Distributed Systems"],
   },
   {
     role: "Software Engineer",

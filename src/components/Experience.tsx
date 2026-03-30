@@ -202,7 +202,7 @@ export default function Experience() {
         "
       >
         {[
-          { label: "Years Experience", value: "2+" },
+          { label: "Years Experience", value: "2.5+" },
           { label: "Projects Delivered", value: "15+" },
           { label: "Companies", value: "3" },
           { label: "Tech Stack", value: "20+" },

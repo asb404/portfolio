@@ -227,7 +227,7 @@ export default function Hero() {
               <p className="text-base text-slate-400 leading-relaxed">
                 Currently enhancing AI research systems at{" "}
                 <span className="text-sky-400 font-medium">
-                  Indiana University
+                  CNS - Indiana University
                 </span>{" "}
                 while bringing enterprise-scale AI solutions to life with experience
                 from{" "}

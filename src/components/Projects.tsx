@@ -6,94 +6,111 @@ import { Icons } from "@/src/components/Icons";
 
 // Add your projects here - update this array with your actual projects
 const projects = [
-    {
-        id: 1,
-        title: "Autonomous Problem-Solving Agent",
-        description:
-          "An AI agent that autonomously diagnoses issues, retrieves context, and executes resolution workflows using LLMs and tool-based reasoning.",
-        fullDescription:
-          "Designed and built an autonomous AI agent capable of end-to-end problem solving for operational and system issues. The agent uses LLM-driven reasoning to analyze problem statements, retrieve relevant context via embedding-based semantic search, and invoke tools to recommend or execute corrective actions. Implemented agentic workflows with Retrieval-Augmented Generation (RAG), enabling accurate, context-aware responses over large operational datasets. Deployed as a scalable backend service with low-latency inference and robust monitoring.",
-        tech: ["Python","FastAPI","LLMs","RAG","Vector Databases",],
-        link: "https://github.com/asb404/PSA-Agent",
-        demo: "",
-        year: 2025,
-        role: "AI Engineer",
-        isFeatured: true,
-    },
-    {
-        id: 2,
-        title: "SentiCloud",
-        description:
-          "Scalable cloud-native ML system for parallel sentiment analysis with high-throughput message processing.",
-        fullDescription:
-          "Designed and built SentiCloud, a scalable cloud-based machine learning platform for parallel sentiment analysis. Developed and operated a cloud-native Kubernetes system on Google Cloud Platform (GCP) with autoscaling and self-healing capabilities. The system processes high-volume streaming messages using distributed workers, achieving sustained throughput of over 5,000 messages per second with sub-second end-to-end latency. Implemented robust deployment, monitoring, and fault-tolerance mechanisms to ensure 99.9% service uptime under variable load.",
-        tech: [
-          "Python",
-          "Machine Learning",
-          "Sentiment Analysis",
-          "Distributed Systems",
-          "Kubernetes",
-          "Google Cloud Platform (GCP)",
-          "Docker",
-          "Autoscaling",
-          "Cloud Monitoring"
-        ],
-        link: "https://github.com/asb404/senti-cloud",
-        demo: "",
-        year: 2025,
-        role: "Cloud ML Engineer",
-        isFeatured: true,
-      },
-      {
-        id: 3,
-        title: "Intelligent Credit Risk & Limit Optimization",
-        description:
-          "Machine learning system for credit risk assessment and dynamic credit limit optimization.",
-        fullDescription:
-          "Designed and implemented an end-to-end machine learning pipeline to assess customer credit risk and optimize credit limits. The system includes large-scale data preprocessing, feature engineering, model selection, and hyperparameter tuning to improve predictive accuracy and robustness. Leveraged ensemble-based algorithms, including XGBoost and Scikit-learn models, to achieve 91% classification accuracy, representing a 12% performance improvement over baseline approaches. The optimized risk predictions enabled more reliable credit decisions and informed dynamic credit limit strategies.",
-        tech: [
-          "Python",
-          "Machine Learning",
-          "Credit Risk Modeling",
-          "Feature Engineering",
-          "XGBoost",
-          "Scikit-learn",
-          "Hyperparameter Tuning",
-          "Data Preprocessing"
-        ],
-        link: "https://github.com/asb404/Intelligent-Optimal-Credit-Risk",
-        demo: "",
-        year: 2024,
-        role: "Machine Learning Engineer",
-        isFeatured: true,
-      },
-      {
-        id: 4,
-        title: "Scheduler Microservice",
-        description:
-          "A distributed scheduler microservice for managing and executing time-based and event-driven tasks in a microservices architecture.",
-        fullDescription:
-          "Designed and built a production-ready Scheduler Microservice to centralize cron-based and event-driven job execution across a distributed microservices ecosystem. The service exposes RESTful APIs to create, update, retrieve, delete, and manually trigger scheduled jobs, while leveraging RabbitMQ for asynchronous task dispatch and reliable message-driven execution. Implemented persistent job storage using a database to ensure durability and recovery across restarts. Containerized the service using Docker and deployed it on Kubernetes to enable horizontal scaling, fault tolerance, and seamless orchestration. The architecture promotes loose coupling, high availability, and independent deployment of scheduling logic.",
-        tech: [
-          "Java",
-          "Spring Boot",
-          "RabbitMQ",
-          "MongoDB",
-          "REST APIs",
-          "Docker",
-          "Kubernetes"
-        ],
-        link: "https://github.com/asb404/Schuduler-microservice",
-        demo: "",
-        year: 2025,
-        role: "Backend Engineer",
-        isFeatured: true,
-    },
+  {
+    id: 1,
+    title: "AI-Powered Procurement Optimization System",
+    description:
+      "AI-driven system for demand forecasting and supplier optimization to reduce procurement costs.",
+    fullDescription:
+      "Designed and built an AI-powered procurement system to optimize inventory planning and supplier selection using demand forecasting and cost optimization models. Developed scalable backend services to process historical procurement data, generate predictive insights, and recommend optimal supplier decisions. The system demonstrated ~20% projected cost savings and ~30% improvement in supplier selection efficiency through data-driven optimization and intelligent decision workflows.",
+    tech: [
+      "Python",
+      "FastAPI",
+      "Machine Learning",
+      "Optimization",
+      "Data Pipelines",
+      "Backend Systems"
+    ],
+    link: "https://github.com/asb404/Restaurant-Procurement-Ai",
+    demo: "",
+    year: 2026,
+    role: "Backend + ML Engineer",
+    isFeatured: true,
+  },
+  {
+    id: 2,
+    title: "Autonomous Problem-Solving Agent",
+    description:
+      "An AI agent that autonomously diagnoses issues, retrieves context, and executes resolution workflows using LLMs and tool-based reasoning.",
+    fullDescription:
+      "Designed and built an autonomous AI agent capable of end-to-end problem solving for operational and system issues. The agent uses LLM-driven reasoning to analyze problem statements, retrieve relevant context via embedding-based semantic search, and invoke tools to recommend or execute corrective actions. Implemented agentic workflows with Retrieval-Augmented Generation (RAG), enabling accurate, context-aware responses over large operational datasets. Deployed as a scalable backend service with low-latency inference and robust monitoring.",
+    tech: ["Python","FastAPI","LLMs","RAG","Vector Databases"],
+    link: "https://github.com/asb404/PSA-Agent",
+    demo: "",
+    year: 2025,
+    role: "AI Engineer",
+    isFeatured: true,
+  },
+  {
+    id: 3,
+    title: "SentiCloud",
+    description:
+      "Scalable cloud-native ML system for parallel sentiment analysis with high-throughput message processing.",
+    fullDescription:
+      "Designed and built SentiCloud, a scalable cloud-based machine learning platform for parallel sentiment analysis. Developed and operated a cloud-native Kubernetes system on Google Cloud Platform (GCP) with autoscaling and self-healing capabilities. The system processes high-volume streaming messages using distributed workers, achieving sustained throughput of over 5,000 messages per second with sub-second end-to-end latency. Implemented robust deployment, monitoring, and fault-tolerance mechanisms to ensure 99.9% service uptime under variable load.",
+    tech: [
+      "Python",
+      "Machine Learning",
+      "Distributed Systems",
+      "Kubernetes",
+      "GCP",
+      "Docker",
+      "Autoscaling"
+    ],
+    link: "https://github.com/asb404/senti-cloud",
+    demo: "",
+    year: 2025,
+    role: "Cloud ML Engineer",
+    isFeatured: true,
+  },
+  {
+    id: 4,
+    title: "Intelligent Credit Risk & Limit Optimization",
+    description:
+      "Machine learning system for credit risk assessment and dynamic credit limit optimization.",
+    fullDescription:
+      "Designed and implemented an end-to-end machine learning pipeline to assess customer credit risk and optimize credit limits using feature engineering and ensemble models. Leveraged XGBoost and Scikit-learn to achieve 91% classification accuracy, improving predictive performance and enabling more reliable financial decision-making.",
+    tech: [
+      "Python",
+      "Machine Learning",
+      "XGBoost",
+      "Scikit-learn",
+      "Feature Engineering"
+    ],
+    link: "https://github.com/asb404/Intelligent-Optimal-Credit-Risk",
+    demo: "",
+    year: 2024,
+    role: "Machine Learning Engineer",
+    isFeatured: true,
+  },
   {
     id: 5,
+    title: "Scheduler Microservice",
+    description:
+      "Distributed scheduler service for managing cron and event-driven jobs in microservices architecture.",
+    fullDescription:
+      "Built a production-ready scheduler microservice with REST APIs to manage time-based and event-driven tasks across distributed systems. Integrated RabbitMQ for asynchronous task execution and MongoDB for persistent job storage. Containerized using Docker and deployed on Kubernetes to enable scalability, fault tolerance, and reliable job orchestration.",
+    tech: [
+      "Java",
+      "Spring Boot",
+      "RabbitMQ",
+      "MongoDB",
+      "Docker",
+      "Kubernetes"
+    ],
+    link: "https://github.com/asb404/Schuduler-microservice",
+    demo: "",
+    year: 2025,
+    role: "Backend Engineer",
+    isFeatured: true,
+  },
+  {
+    id: 6,
     title: "Portfolio Website",
-    description: "Modern portfolio built with Next.js and Tailwind CSS",
-    fullDescription: "Designed and developed a responsive portfolio website with smooth animations, dark mode, and optimized performance. Features include project showcase, experience timeline, and contact form.",
+    description:
+      "Modern portfolio built with Next.js, TypeScript, and Tailwind CSS.",
+    fullDescription:
+      "Designed and developed a responsive portfolio website with smooth animations, dark mode, and optimized performance. Features include project showcase, experience timeline, and contact form.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     link: "https://github.com/asb404/Portfolio",
     demo: "https://antara.vercel.app",

@@ -3,53 +3,48 @@
 import { motion } from "framer-motion";
 
 const experiences = [
-    {
-        role: "Software Developer (Research Assistant)",
-        company: "Indiana University",
-        period: "Mar 2025 – Present",
-        description:
-          "Research-focused engineering work on AI systems, data pipelines, and performance-critical computation.",
-        points: [
-          "Built FastAPI services using Claude and local LLMs to power agentic RAG pipelines for semantic access to Allen Brain Atlas datasets.",
-          "Implemented tool-augmented LLM agents using LangChain and LangGraph with function calling and dynamic routing,integrating 10+ data and analysis tools, evaluation workflows, and response caching to reduce inference latency by 35%.",
-          "Built optimized Python data pipelines for neuroscience text and brain image data, supporting domain adaptation and fine-tuning experiments across multiple model variants and delivering >99% reliable backend inference.",
-          "Optimized Python-based data processing for large-scale tissue mapping and projection, improving throughput by 30% and enabling precise alignment of 1,000+ tissue blocks.",
-          "Built reusable, production-quality data transformation modules following SDLC best practices, reducing preprocessing time by 25% and improving workflow transparency.",
-          "Implemented multithreaded, memory-efficient pipelines with algorithmic and data structure optimizations, accelerating large-scale computations by 20%."
-        ],
-        tech: ["FastAPI", "RAG", "Python", "Data Pipelines", "AI Systems"],
-      },
+  {
+    role: "Software Developer (Research Assistant)",
+    company: "CNS - Indiana University",
+    period: "Mar 2025 – Present",
+    description:
+      "Built distributed AI systems, RAG pipelines, and high-performance data processing workflows for large-scale biomedical datasets.",
+    points: [
+      "Translated ambiguous domain queries into production-grade RAG pipelines, designing system workflows and iterating based on real-world usage and feedback.",
+      "Designed and deployed FastAPI-based distributed backend services for agentic RAG systems using Claude and local LLMs, enabling semantic access to large-scale datasets.",
+      "Built tool-augmented LLM agents using LangChain and LangGraph with dynamic routing and function calling, integrating 10+ tools; reduced latency by 35% and achieved >99% reliable inference via caching and fault-tolerant design.",
+      "Optimized large-scale data processing pipelines using parallel and distributed computation, improving throughput by 30% across 1,000+ data units.",
+      "Engineered multithreaded, memory-efficient pipelines with algorithmic optimizations, accelerating large-scale computations by 20% and improving system efficiency."
+    ],
+    tech: ["FastAPI", "RAG", "LangChain", "LangGraph", "Distributed Systems"],
+  },
   {
     role: "Software Development Engineer Intern",
     company: "Amazon",
     period: "Jun 2025 – Aug 2025",
     description:
-      "Worked on cloud-native, AI-powered automation and monitoring systems supporting large-scale operational workflows.",
+      "Worked on cloud-native distributed systems for AI-powered automation and real-time operational decisioning.",
     points: [
-      "Designed distributed, cloud-native monitoring pipelines on AWS using Lambda, CloudWatch, CloudFormation,DynamoDB, SQS, and DLQ, centralizing order event tracking and alerting, boosting on-call efficiency by 35%.",
-      "Implemented embedding-based vector retrieval over 100K+ operational records, enabling semantic search, similarity matching, and 30% faster incident resolution.",
-      "Applied Dependency Injection and Registry design patterns to automate DLQ redrive operations, enhancing system extensibility by 65% and reducing MTTR by 40%.",
-      "Developed production-grade user interfaces using TypeScript, JavaScript, and Vue.js, integrated with REST and GraphQL APIs, AWS IAM authentication, and robust data validation.",
-      "Built CI/CD pipelines with automated unit, integration, and regression tests using JUnit and Mockito, ensuring reliable deployments and shortening release cycles by 25%."
+      "Designed cloud-native distributed data pipelines on AWS for LLM and embedding-powered automation, enabling real-time AI decisioning at scale.",
+      "Implemented vector search and embedding-based retrieval over 100K+ records, enabling semantic search and reducing incident resolution time by 30%.",
+      "Built production-grade AI agent workflows using Amazon Q and Bedrock with deterministic control logic to automate DLQ triage and redrive, reducing manual effort by 60% and improving MTTR by 40%.",
+      "Developed secure, scalable microservices and APIs integrated with AWS IAM, ensuring reliable and auditable AI-driven operations."
     ],
-    tech: ["AWS", "Amazon Q", "Bedrock", "Vector DB", "Cloud Native"],
+    tech: ["AWS", "Bedrock", "Vector Search", "Microservices", "Distributed Systems"],
   },
   {
     role: "Software Engineer",
     company: "Motorola Mobility",
     period: "Aug 2022 – Aug 2024",
     description:
-      "Built AI-enabled Android and backend systems delivering performance-critical features to production users.",
+      "Built AI-enabled mobile and backend systems delivering scalable, performance-critical features to production users.",
     points: [
-      "Built AI-driven Android mobile app features (Pay Attention, Remember This) leveraged Java, Kotlin, Android SDK, Jetpack Compose, and AOSP to deliver smooth experiences to 100K+ users with an 18% performance gain.",
-      "Optimized mobile performance and memory usage with multithreaded data processing, backend integration, and Android-specific memory management, reducing latency by 20%.",
-      "Leveraged Java, Kotlin, Android SDK, Jetpack Compose, and AOSP to deliver smooth experiences to 100K+ users with an 18% performance gain.",
-      "Applied algorithmic and data structure optimizations across Android components including Activities, Services, Broadcast Receivers, and Content Providers, streamlining app workflows and improving responsiveness and reliability.",
-      "Built custom Jetpack Compose and React Native UI components to deliver consistent cross-platform experiences, with unit/integration tests improving usability and maintainability by 15%.",
-      "Coordinated feature delivery in Agile sprints, including design discussions, planning, and peer reviews, ensuring scalable production releases.",
-      "Designed and integrated AI-powered decision logic into Android system workflows for the \“Care for Dependents\” device mode, earning 2nd place at Motorola India Hackathon 2023."
+      "Built AI-driven features leveraging on-device ML and scalable distributed backend services with APIs and asynchronous processing, serving 100K+ users with an 18% performance improvement.",
+      "Engineered low-latency inference pipelines using multithreading and memory-optimized design, reducing latency by 20% and increasing system throughput.",
+      "Architected AI-powered decision logic for system workflows, driving production releases and securing 2nd place at Motorola India Hackathon 2023.",
+      "Applied algorithmic and data structure optimizations across system components, improving application responsiveness, reliability, and execution efficiency."
     ],
-    tech: ["Android", "Machine Learning", "Backend", "Mobile AI"],
+    tech: ["Android", "Kotlin", "Machine Learning", "Backend", "System Design"],
   },
 ];
 

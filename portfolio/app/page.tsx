@@ -1,33 +1,27 @@
-import Hero from "@/src/components/Hero";
-import Experience from "@/src/components/Experience";
-import Projects from "@/src/components/Projects";
-import Footer from "@/src/components/Footer";
 import Navbar from "@/src/components/Navbar";
+import Hero from "@/src/components/Hero";
+import Expertise from "@/src/components/Expertise";
+import Experience from "@/src/components/Experience";
+import Research from "@/src/components/Research";
+import Projects from "@/src/components/Projects";
+import Education from "@/src/components/Education";
 import Contact from "@/src/components/Contact";
+import Footer from "@/src/components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <section id="navbar">
-        <Navbar />
-      </section>
-      <section id="home">
+    <>
+      <Navbar />
+      <main>
         <Hero />
-      </section>
-
-      <section id="experience" className="scroll-mt-28">
+        <Expertise />
         <Experience />
-      </section>
-
-      <section id="projects" className="scroll-mt-28">
+        <Research />
         <Projects />
-      </section>
-
-      <section id="constact" className="scroll-mt-28">
+        <Education />
         <Contact />
-      </section>
-
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
